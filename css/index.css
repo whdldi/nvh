@@ -1,0 +1,559 @@
+@charset "utf-8";
+
+*{font-size: 1.7rem;}
+/* 기본폰트 사이즈 */
+
+.fas ,.mobile{display: none;}
+/* mo menu */
+
+header{
+     height: 80px;
+     line-height: 80px;
+     background-color: rgb(204, 115, 115);
+     position: relative;
+     width: 100%;
+     text-align: center;
+     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);  
+}
+
+/* 스크립트로 스크롤 고정 */
+header.fixed{
+     width: 100%;
+     position: fixed;
+     top:0;
+     left:0;
+     height: 80px;
+     z-index: 500;
+}
+
+
+
+.header_in{
+     max-width: 1200px;
+     width: calc(100% - 50px);
+     background-color: grey;
+     height: 100%;
+     display: inline-block;
+     text-align: center;
+     display: flex;
+     justify-content: space-between;
+     margin: 0 auto;
+}
+.header_in div{
+     display: inline-block;
+}
+.header_in .logo a img{
+     width: 200px;
+     vertical-align: middle;
+}
+
+/* pc_wrap이 mo ver에서 none=logo 제외 */
+.pc_none{
+     display: inline-block;
+}
+
+/* pc menu 2개 */
+.pc ul li {
+     display: inline-block;
+     width: 140px;
+     text-align: center;
+     margin-right: 20px;
+     background-color: aliceblue;
+}
+.pc ul li:first-child{
+     font-weight: 700;
+}
+
+
+/* icon 3개 */
+.icon{margin-right: 20px;}
+.icon a {
+     display: inline-block;
+     vertical-align: middle;
+     width: 30px;
+     text-align: center;
+     margin-right: 10px;
+     height: 30px;
+     line-height: 40px;
+}
+.icon a img{
+     width: 100%;
+     display: block;
+}
+
+/* download btn */
+.dl a{
+     display: inline-block;
+     width: 125px;
+     height: 40px;
+     border-radius: 10px;
+     line-height: 37px;
+     background-color: #ff9100;
+     font-weight:400;
+     color: white;
+}
+.dl img {
+     width: 22px;
+     padding-left: 4px;
+     vertical-align: middle;
+}
+
+/* header end */
+/* header end */
+/* header end */
+
+
+
+
+
+
+.main_visual{
+     height: 650px;
+     background:url(../img_nv/pc_main.png) center center no-repeat;
+     background-color: antiquewhite;
+}
+
+
+.title{
+     max-width: 1200px;
+     width: calc(100% - 50px);
+     border: 2px solid violet;
+     height: 100%;
+     display: inline-block;
+     text-align: left;
+     display: flex;
+     justify-content: space-between;
+     margin: 0 auto;
+     position: relative;
+}
+.subt{
+     position: absolute;
+     top:130px;
+     left: 20px;
+}
+
+.subt p,
+.subt b,
+.subt span{
+     font-size: 4.5rem;
+     color:#444;
+     text-shadow:  2px 2px 5px rgba(0, 0, 0, 0.2);   
+     line-height: 65px;
+     font-weight: 500;
+     letter-spacing: -0.15rem;
+}
+.subt b{
+     font-weight: 800;
+}
+
+/* 중간선 */
+.subt span{
+     display: inline-block;
+     width: 160px;
+     height: 3px;
+     margin-bottom: 15px;
+     background-color: #ff9100;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);   
+}
+.maint{
+     position: absolute;
+     bottom: 100px;
+     right: 20px;
+}
+.maint b{
+     font-size: 8.0rem;
+     color:#444;
+     font-weight: 700;
+     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);   
+     letter-spacing: -0.4rem;
+}
+/* .main_visual > dl{
+     max-width: 700px;
+     width: calc(100% - 40px);
+     position: absolute;
+     top:50%;
+     left:50%;
+     transform: translate(-50%, -50%);
+} */
+
+
+
+/* service 시작 */
+.serv{
+     width: 100%;
+     background-color: #fafafa;
+     border-top: 2px solid #ededed;
+     border-bottom: 2px solid #ededed;
+     padding-bottom: 37px;
+}
+
+.serv_tit{
+     text-align: center;
+     margin-top: 80px;
+     /* margin-bottom: 20px; */
+}
+.serv_tit ul :first-child{
+     display: inline-block;
+     width: 13px;
+     height: 13px;
+     border-radius: 50%;
+     margin-bottom: 5px;
+     background-color: #ff9100;
+}
+.serv_tit ul :nth-child(2){
+     font-size: 1.8rem;
+     font-weight: 500;
+     color: #555;
+}
+
+.serv_tit ul :nth-child(3){
+     font-size: 4.0rem;
+     font-weight: 700;
+     color: #333;
+}
+
+/* service 뱃지~내용 */
+.serv_wrap{
+     max-width: 680px;
+     width: calc(100% - 50px);
+     /* border: 2px solid violet; */
+     height: 300px;
+     text-align: left;
+     display: flex;
+     justify-content: space-between;
+     margin: 0 auto;
+     position: relative;
+}
+.serv_wrap > div{
+     margin: 0 auto;
+     width: 600px;
+     height: 100%;
+     /* background-color: aqua; */
+}
+.serv_box{
+     /* background-color: antiquewhite; */
+     display:inline-block;
+     margin-top: 40px;
+     width: 100%;
+}
+.serv_box div{
+     vertical-align: middle;
+     height: 100%;
+}
+.bad{
+     width:30%;
+     height:30%;
+     /* background-color: #333; */
+     display: inline-block;
+     margin-right: 5%;
+     margin-left: 5.8%;
+}
+.bad img{
+     width: 100%;
+}
+
+/* service text */
+.serv_t{
+     display: inline-block;
+     width: 50%;
+     vertical-align: middle;
+     /* background-color: yellow; */
+     height: 100%;
+     margin-right: 5%;
+}
+.serv_t ul :first-child{
+     font-size: 2.5rem;
+     font-weight: 700;
+     margin-bottom: 5px;
+}
+.serv_t ul :nth-child(2){
+     font-weight: 700;
+     color: #ff9100;
+     margin-bottom: 10px;
+}
+
+
+
+
+
+/* 이하 슬릭슬라이드 dots랑 next/prev버튼 */
+.slick-dots{
+     position: absolute;
+     bottom: 0%;
+     display: inline-block;
+     width: 100%;
+     padding: 0;
+     margin: 0;
+     list-style: none;
+     text-align: center;
+     z-index: 50; 
+   }
+/* dots 위치 */
+ 
+.slick-dots li button:before {
+     font-family: 'slick';
+     font-size: 1.0rem;
+     line-height: 1.0rem;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 10px;
+     height: 10px;
+     content: '•';
+     text-align: center;
+     opacity: .2;
+     color: #333;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+}
+/* 대기상태일때 */
+.slick-dots li.slick-active button:before {
+     opacity: .7;
+     color: #ff9100;
+ }
+
+ /* dots end */
+
+/* active일때 */
+.slick-prev, .slick-next{
+     z-index: 50;
+     font-size: 0;
+     line-height: 0;
+     position: absolute;
+     top: 45%;
+     display: block;
+     padding: 0;
+     -webkit-transform: translate(0, -50%);
+     -ms-transform: translate(0, -50%);
+     transform: translate(0, -50%);
+     cursor: pointer;
+     color: transparent;
+     border: none;
+     outline: none;
+     background: transparent;
+}
+/* 있어야 left,right btn보임 */
+
+.slick-prev:before, .slick-next:before {
+     font-family: 'slick';
+     /* font-size: 3rem; */
+     line-height: 1;
+     opacity: 1;
+     color: rgb(153, 49, 49);
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+ }
+ /* btn 크기조절 */
+
+ .slick-prev:before {
+     content: url('../img_nv/nex_prev.png') ;
+     display: inline-block;
+     transform:rotateY(180deg);
+ }
+ .slick-next:before {
+     content: url('../img_nv/nex_prev.png') ;
+     display: inline-block;
+ }
+ /* btn 모양 */
+ 
+.slick-prev {
+     left: 1%;
+ }
+ .slick-next{
+     right: 1%;
+ }
+ .slick-dots li {
+     position: relative;
+     display: inline-block;
+     width:15px;
+     height: 20px;
+     margin: 0 4px;
+     padding: 0;
+     cursor: pointer;
+ }
+
+
+ /* serv(서비스) end */
+
+
+
+
+/* sport 시작 */
+.sport{
+     width: 100%;
+     border-bottom: 2px solid #350e0e;
+     height: 600px;
+     padding-bottom: 37px;
+     /* background-color: rgb(201, 201, 201); */
+     text-align: center;
+}
+
+.spo_tit{
+     text-align: center;
+     margin-top: 80px;
+     /* margin-bottom: 20px; */
+}
+.spo_tit ul :first-child{
+     display: inline-block;
+     width: 13px;
+     height: 13px;
+     border-radius: 50%;
+     margin-bottom: 5px;
+     background-color: #ff9100;
+}
+.spo_tit ul :nth-child(2){
+     font-size: 4.0rem;
+     font-weight: 700;
+     color: #333;
+}
+
+.
+
+/* sport 공통틀 */
+.spo_wrap{
+     max-width: 680px;
+     width: calc(100% - 50px);
+     /* background-color: #333; */
+     height: 370px;
+     justify-content: space-between;
+     margin: 0 auto;
+     /* position: relative; */
+}
+/* spo_btn(종목선택버튼) */
+.btn{
+     width: 100%;
+     margin: 0 auto;
+     margin-top: 20px;
+}
+.btn a img{
+     width: 20px;
+     height: 20px;
+     vertical-align:sub;
+     margin-right: 8px;
+}
+.btn > a{
+     display: inline-block;
+     width: 95px;
+     height: 40px;
+     line-height: 38px;
+     border-radius: 10px;
+     background-color: #ccc;
+     margin-right: 20px;
+     color: white;
+     cursor: pointer;
+}
+.btn i{
+     font-size: 2rem;
+     opacity: .2;
+}
+.btn a.bowli_btn{
+     background-color: #f46c22;
+}
+
+
+
+.spo_wrap > .spo_box1{
+     margin: 0 auto;
+     text-align: left;
+     width: 88%;
+     height: 400px;
+     background-color: aqua;
+     margin-top: 50px;
+     /* position: absolute; *//
+}
+
+
+
+/* spo_box1 */
+.spo_box1 div{
+     vertical-align: middle;
+     height: 100%;
+}
+
+/* spo_box1 text*/
+.spo_box1{
+     position: relative;
+     background-color: rgb(153, 56, 56);
+     max-width: 680px;
+     width: calc(100% - 50px);
+     height: 100%;
+}
+.spo_bg{
+     position: absolute;
+     bottom:0;
+     left:0;
+     width: 100%;
+}
+.spo_bg img{
+     width: 100%;
+     height: 100%;
+}
+.spo_t{
+     position: absolute;
+     top:35%;
+     left:10%;
+     display: inline-block;
+     width: 50%;
+     /* background-color: yellow; */
+     height: 100%;
+}
+.spo_t ul :first-child{
+     font-size: 2.5rem;
+     font-weight: 600;
+     margin-bottom: 5px;
+}
+.spo_t ul li span{
+     font-weight: 600;
+     color: #ff9100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 태블릿일때 */
+@media screen and (max-width: 1024px){
+     .pc_none div{display: none;}
+     .ui.button{
+          display: none;
+     }
+     /* sementic */
+
+     .mobile{
+          display: block;
+          position: fixed;
+          top:0;
+          left:-100%;
+          width: 80%;
+          height: 100%;
+          background-color: #eee;
+          z-index: 9;
+          transition: .5s;
+     }
+     .fas {
+          display:block;
+          position: absolute;
+          right: 30px;
+          top:30px;
+          font-size: 2.0rem;
+     }
+     .fa-times{
+          display: none;
+     }
+}

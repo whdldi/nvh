@@ -1,0 +1,31 @@
+@charset "utf-8";
+*{margin:0; padding:0;}
+html, body {
+     font-size: 62.5%;
+     /* min-width: 1300px;/ */
+     /* 모바일로 봤을때 원래 내가 컨테이너를 거의 1200으로 했어서 반응형대신 좀 편하게 보도록 min-width지정함 */
+}
+
+/* 이러면 1.6rem이라했을때 16px으로 편히 볼수있음*/
+li{list-style: none;}
+a{
+     display: block;
+     color:#333;
+     text-decoration: none;
+     letter-spacing: -0.025rem;
+}
+p{
+     letter-spacing: -0.025rem;
+     color:#333;
+}
+li{
+     color: #333;
+}
+.clearfix::after{
+     content:'';
+     display: block;
+     clear: both;
+}
+img{
+     border: 0;
+}
