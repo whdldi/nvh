@@ -76,3 +76,98 @@ $(document).ready(function(){
          ]
        });
   });
+
+  
+// /* 24시간 팝업 */
+$(function () {
+  // 쿠키 가져오기
+  var getCookie = function (cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1);
+      if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+    }
+    return "";
+  }
+
+  // 24시간 기준 쿠키 설정하기  
+  var setCookie = function (cname, cvalue, exdays) {
+    var todayDate = new Date();
+    todayDate.setTime(todayDate.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + todayDate.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+  }
+
+  var couponClose = function () {
+    if ($("input[name='chkbox']").is(":checked") == true) {
+      setCookie("close", "Y", 1); //기간( ex. 1은 하루, 7은 일주일)
+    }
+    $("#pop").hide();
+  }
+
+  $(document).ready(function () {
+    var cookiedata = document.cookie;
+    console.log(cookiedata);
+    if (cookiedata.indexOf("close=Y") < 0) {
+      $("#pop").fadeIn();
+    } else {
+      $("#pop").hide();
+    }
+    $(".btnClose").click(function () {
+      couponClose();
+      $("#sli").hide();
+      $(".pop_slick").fadeOut();
+      //모든 팝업에서 X눌렀을때 닫기
+    });
+    $("#close_ok").click(function () {
+      couponClose();
+    });
+    $("#close_letsee").click(function () {
+      couponClose();
+      $("#sli").fadeIn(300);
+      //볼래요 눌렀을때 슬릭 팝업 천천히 표출
+    });
+  });
+});
+
+
+ /* popup 슬라이드 */
+ $(function(){
+  $('.pop_sli_wrap').slick({
+       dots: true,
+       infinite: false,
+       speed: 800,
+       slidesToShow: 1,
+       slidesToScroll: 1,
+       autoplay:false,
+       responsive: [
+         {
+           breakpoint: 1024,
+           settings: {
+             slidesToShow: 1,
+             slidesToScroll: 1,
+             infinite: true,
+             dots: true
+           }
+         },
+         {
+           breakpoint: 600,
+           settings: {
+             slidesToShow: 1,
+             slidesToScroll: 1
+           }
+         },
+         {
+           breakpoint: 360,
+           settings: {
+             slidesToShow: 1,
+             slidesToScroll: 1
+           }
+         }
+       ]
+     });
+});
+
+      
