@@ -61,14 +61,7 @@
      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);   
      letter-spacing: -0.4rem;
 }
-/* .main_visual > dl{
-     max-width: 700px;
-     width: calc(100% - 40px);
-     position: absolute;
-     top:50%;
-     left:50%;
-     transform: translate(-50%, -50%);
-} */
+
 
 
 
@@ -174,6 +167,7 @@
 .slick-dots{
      position: absolute;
      bottom: 0%;
+     left: 0;
      display: inline-block;
      width: 100%;
      padding: 0;
@@ -407,3 +401,336 @@
 
 
 
+
+
+/* 24시간 팝업 *//* 24시간 팝업 */
+/* 24시간 팝업 *//* 24시간 팝업 */
+.pop {
+     display: none;
+}
+/* 검은필터 */
+.pop:before {
+     display: block;
+     content: "";
+     position: fixed;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5);
+     z-index: 5000;
+}
+/* 팝업사진만 쉐도우 */
+.layerBox{
+     z-index: 5000;
+     max-width:680px;
+     width: calc(100% - 50px);
+     position: fixed;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+}
+
+/* 팝업박스 안 img text */
+.cont{
+     background-color: white;
+     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+     border-radius: 10px;
+}
+.cont_intro{
+     text-align: center;
+     margin: 0 auto;
+     padding: 60px 0;
+}
+.pop img{
+     width: 45%;
+}
+.intro li,
+.intro li span{
+     font-size: 2.5rem;
+     font-weight: 600;
+     line-height: 30px;
+}
+.intro li span{
+     color: #ff9100;
+}
+.intro li:last-child{
+     margin-bottom: 10px;
+}
+
+
+/* download btn */
+.yn_btn a{
+     display: inline-block;
+     width: 110px;
+     height: 45px;
+     border-radius: 10px;
+     line-height: 45px;
+     background-color: #ff9100;
+     font-weight:500;
+     color: white;
+     margin-right: 20px;
+     margin-top: 20px;
+     font-size: 2.0rem;
+     transition: ease-in-out 0.2s;
+}
+.yn_btn .n{
+     color: #666;
+     background-color: #fff;
+     border: 1px solid #666;
+}
+.yn_btn .y:hover{
+     background-color: #ec7e00;
+     transition: ease-in-out 0.2s;
+}
+.yn_btn .n:hover{
+     background-color: #666;
+     color: #fff;
+     transition: ease-in-out 0.2s;
+}
+
+
+
+
+/* X버튼 */
+#close a{
+     font-size: 3rem;
+     display: inline-block;
+     position: absolute;
+     right: 0;
+     line-height: 40px;
+     width: 40px;
+     text-align: center;
+     cursor: pointer;
+}
+/* 하루동안글자랑 체크박스 */
+.pop .layerBox .btnTodayHide a {
+     font-size: 1.5rem;
+     margin-top: 10px;
+     color:#fff;
+}
+
+.btnTodayHide {
+     display: inline-block;
+     width: 100%;
+}
+
+label {
+     color:#fff;
+     cursor: pointer;
+     display: inline-block;
+     padding-left: 3px;
+}
+
+input {
+     cursor: pointer;
+}
+
+/* 닫는버튼 */
+#close a {
+     color:#fff;
+     text-decoration: none;
+}
+
+.close {
+     display: inline-block;
+     
+}
+
+header nav .gnb > li{
+     z-index: 0;
+}
+/* commond에도 있는 애인데, 처음 notice 검은 필터때문에
+z-index만 0으로 바꿔줌 */
+
+
+
+
+/* 24시간 팝업 안 슬릭부분 */
+/* 24시간 팝업 안 슬릭부분 */
+/* 24시간 팝업 안 슬릭부분 */
+
+.pop_sli{
+     background-color: white;
+     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+     border-radius: 10px;
+     height: 390px;
+}
+
+.pop_sli_tit{
+     text-align: left;
+     /* margin-bottom: 20px; */
+     background-color: #ccc;
+     
+}
+.pop_sli_tit ul :first-child{
+     font-size: 2.2rem;
+     font-weight: 600;
+     margin-bottom: 20px;
+     
+}
+.pop_sli_tit ul li{
+     font-size: 1.7rem;
+     font-weight: 500;
+     color: #555;
+}
+.pop_sli_tit ul li span.noti{
+     font-size: 1.2rem;
+     color: #666;
+     font-weight: 400;
+}
+
+
+/* 마지막 다운로드부분 팝업속성 */
+.pop_sli_tit  .last_pop {
+     text-align: center;
+}
+.pop_sli_tit  .last_pop ul > li:nth-child(2){
+     color: #444;
+     font-weight: 600;
+}
+.pop_sli_tit .last_pop > li:last-child{
+     color: #333;
+     font-size: 2.7rem;
+     font-weight: 600;
+
+}
+.pop_sli_tit .last_pop > li:last-child span{
+     color: #ff9100;
+     font-size: 2.7rem;
+}
+
+/* service 뱃지~내용 */
+.pop_sli{
+     max-width: 800px;
+     width: calc(100% - 50px);
+     margin: 0 auto;
+}
+.pop_sli_wrap{
+     margin: 0 auto;
+     text-align: center;
+    
+}
+.pop_sli_box{
+     display:inline-block;
+     width: 100%;
+     height: 370px;
+}
+.pop_sli_box div{
+     display: inline-block;
+     margin-top: 80px;
+}
+
+.pop_sli_bad{
+     margin-right: 10px;
+     display: inline-block;
+     width: 50%;
+     height: 200px;
+     background-color: #444;
+     vertical-align: top;
+}
+.pop_sli_bad > img{
+     width: 100%;
+}
+
+/* popup안의 슬릭슬라이드설정 */
+/* popup안의 슬릭슬라이드설정 */
+/* popup안의 슬릭슬라이드설정 */
+
+
+/* active일때 */
+.pop_sli_wrap .slick-prev,
+.pop_sli_wrap .slick-next{
+     z-index: 50;
+     font-size: 0;
+     line-height: 0;
+     position: absolute;
+     top: 90%;
+     display: block;
+     padding: 0;
+     -webkit-transform: translate(0, -50%);
+     -ms-transform: translate(0, -50%);
+     transform: translate(0, -50%);
+     cursor: pointer;
+     color: transparent;
+     border: none;
+     outline: none;
+     background: transparent;
+}
+/* next,prev 위치 */
+
+.pop_sli_wrap .slick-prev:before,
+.pop_sli_wrap .slick-next:before {
+     font-family: 'slick';
+     line-height: 1;
+     opacity: 1;
+     width: 20px;
+     height: 20px;
+     background-color: #333;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+ }
+ /* btn 크기조절 */
+
+ .pop_sli_wrap .slick-prev:before {
+     background: url('../img_nv/nex_prev.png');
+     transform:rotateY(180deg);
+     display: inline-block;
+ }
+ .pop_sli_wrap .slick-next:before {
+     background: url('../img_nv/nex_prev.png') ;
+     display: inline-block;
+ }
+ /* btn 모양 */
+ 
+
+ 
+/* .pop_sli_wrap .slick-dots li button:before {
+     font-family: 'slick';
+     font-size: .5rem;
+     line-height: 1.0rem;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 10px;
+     height: 10px;
+     content: '•';
+     text-align: center;
+     opacity: .2;
+     color: #333;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+} */
+
+ .pop_sli_wrap .slick-prev {
+     position: absolute;
+     left: 35%;
+     z-index: 5000;
+     bottom: 30px;
+     height: 40px;
+     border-radius: 50%;
+ }
+ .pop_sli_wrap .slick-next{
+      position: absolute;
+      right: 35%;
+     z-index: 5000;
+     bottom: 30px;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+ }
+ .pop_sli_wrap .slick-dots li {
+     position: relative;
+     display: inline-block;
+     width:15px;
+     height: 20px;
+     margin: 20px 4px;
+     padding: 0;
+     cursor: pointer;
+ }
+
+
+
+
+/* 24시간 팝업 끝 *//* 24시간 팝업 끝 */
+/* 24시간 팝업 끝 *//* 24시간 팝업 끝 */

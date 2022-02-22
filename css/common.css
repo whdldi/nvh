@@ -12,6 +12,7 @@ header{
      width: 100%;
      text-align: center;
      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);  
+     background-color: white;
 }
 
 /* 스크립트로 스크롤 고정 */
@@ -27,7 +28,6 @@ header.fixed{
 .header_in{
      max-width: 1200px;
      width: calc(100% - 50px);
-     background-color: grey;
      height: 100%;
      display: inline-block;
      text-align: center;
@@ -190,6 +190,41 @@ footer{
 }
 .click_txt{
      padding-top: 30px;
+}
+
+
+
+
+
+/* 위로가기 */
+.up{
+     position: fixed;
+	bottom: 0;
+	right: 0;
+     display: inline-block;
+	text-align: center;
+     z-index: 5000;
+}
+.up a{
+     box-shadow: 0px 0px 3px rgb(0, 0, 0); 
+     position: absolute;
+     z-index: 5000;
+     bottom: 30px;
+	right: 30px;
+     width: 50px;
+     height: 50px;
+     background-color: rgba(82, 81, 81, 0.589);
+     border-radius: 50%;
+     
+}
+.up img{
+     position: absolute;
+     width: 60%;
+     height: 60%;
+     display: inline-block;
+     transform:rotateZ(-90deg);
+     left: 20%;
+     top:18%;
 }
 
 
