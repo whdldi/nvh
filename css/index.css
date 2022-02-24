@@ -11,7 +11,7 @@
 .title{
      max-width: 1200px;
      width: calc(100% - 50px);
-     border: 2px solid violet;
+     border: 2px solid rgb(130, 213, 238);
      height: 100%;
      display: inline-block;
      text-align: left;
