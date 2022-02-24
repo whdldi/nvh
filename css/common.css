@@ -230,6 +230,7 @@ footer{
 
 /* Tb.ver */
 @media (max-width: 1024px){
+     html{background-color: yellowgreen;}
      .pc_none div{display: none;}
      .ui.button{
           display: none;
@@ -257,10 +258,12 @@ footer{
      .fa-times{
           display: none;
      }
+     
 }
 
 /* Mo.ver */
 @media (min-width: 320px) and (max-width: 480px){
+     html{background-color: aquamarine;}
      .pc_none div{display: none;}
      .ui.button{
           display: none;
