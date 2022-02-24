@@ -387,7 +387,6 @@
 /* 2nd&4nd background color:gray /text-align:right */
 .gray_bg > .spo_box1 {
      text-align: right;
-     padding-right: 60px;
 }
 .gray_bg {
      margin-bottom: 53px;
@@ -397,10 +396,12 @@
      background-color: #fafafa;
 }
 img.grays{
-     width: 90%;
+     width: 98%;
      height: 100%;
 }
-
+.gray_bg .spo_t {
+     padding-left: 0px;
+}
 
 
 
