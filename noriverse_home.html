@@ -208,7 +208,7 @@
           </div>
 
           <div class="spo_box1">
-               <div class="spo_bg"><img src="img_nv/pc_sport_form1.png"></div>
+               <div class="spo_bg"><img class="first_box" src="img_nv/pc_sport_form1.png"></div>
                <div class="spo_t">
                     <ul>
                          <li>내 볼링정보를 한 눈에, <span>홈</span></li>
@@ -219,7 +219,7 @@
      </div>
           <div class="gray_bg">
                <div class="spo_box1">
-                    <div class="spo_bg"><img src="img_nv/pc_sport_form2.png"></div>
+                    <div class="spo_bg"><img class="grays" src="img_nv/pc_sport_form2.png"></div>
                     <div class="spo_t">
                          <ul>
                               <li>볼링모임을 쉽고 편하게, <span>클럽</span></li>
@@ -241,7 +241,7 @@
 
           <div class="gray_bg">
                <div class="spo_box1">
-                    <div class="spo_bg"><img src="img_nv/pc_sport_form4.png"></div>
+                    <div class="spo_bg"><img class="grays" src="img_nv/pc_sport_form4.png"></div>
                     <div class="spo_t">
                          <ul>
                               <li>내 볼링장의 모든것, <span>볼링장</span></li>
@@ -289,7 +289,7 @@
 
 
 
-<!-- 첫 팝업 -->
+<!-- 인트로 팝업 -->
 <div id="pop" class="pop">
 <div class="layerBox">
      <div class="cont">
@@ -322,80 +322,169 @@
      </div>
 </div>
 </div>
-<!-- 첫 팝업 끝 -->
+<!-- 인트로 팝업 끝 -->
 
-<!-- 슬릭팝업 -->
-<div id="sli" class="pop">
-<div class="pop_slick">
+<!-- 내용3가지 팝업 첫번째 -->
+<div id="popserv" class="pop">
      <div class="layerBox">
-
-     <!-- 이 밑부터 슬릭슬라이더 -->
      <section class="pop_sli">
+          <div class="pop_sli_wrap">
 
-          <div class="pop_sli_wrap"><!-- 1slide -->
-
-               <div class="pop_sli_box">
+               <div class="pop_sli_box_pop1">
                     <div class="pop_sli_bad"><img src="img_nv/popup-1.png"></div>
                     <div class="pop_sli_tit">
                          <ul>
                               <li>쉬운매칭, 빠른경기!</li>
-                              <li>- 내 주변 상대를 찾아 쉽고 빠른<br>게임진행이 가능해요<br><br>- 연습/경기의 개최~발표까지<br>간편하게 관리 할 수 있어요</li>
+                              <li>- 내 주변 상대를 찾아 쉽고 빠<br>른 게임진행이 가능해요<br><br>- 연습/경기의 개최~발표까지<br>간편하게 관리 할 수 있어요</li>
                               <li><span class="noti">*일부기능 추후 업데이트 예정</span></li>
                          </ul>
                     </div>
+                    <div class="pop_np_btn">
+                         <span id="prev_1">
+                              <a class="prev" href="#"><img src="img_nv/nex_prev_whi.png">이전</a>
+                         </span>
+                         <span id="next_1">
+                              <a class="nex" href="#">다음<img src="img_nv/nex_prev_whi.png"></a>
+                         </span>
+                    </div>
+                    
                </div>
 
-               <div class="pop_sli_box">
-                    <div class="pop_sli_bad"><img src="img_nv/popup-2.png"></div>
+          </div><!-- pop_sli_wrap end -->
+          
+               <div class="close">
+                    <span id="close" class="btnClose">
+                         <a href="#">&times;</a>
+                    </span>
+               </div>
+     </section> 
+     </div>
+</div>
 
+<!-- 내용3가지 팝업 두번째 -->
+
+<div id="popserv2" class="pop">
+     <div class="layerBox">
+     <section class="pop_sli">
+          <div class="pop_sli_wrap">
+
+               <div class="pop_sli_box_pop2">
+                    <div class="pop_sli_bad"><img src="img_nv/popup-2.png"></div>
                     <div class="pop_sli_tit">
                          <ul>
                               <li>똑똑한 기록관리, 맞춤분석</li>
                               <li>- 경기기록에 대한 승률, 전적, 랭킹 <br>등 각종 데이터를 정리해줘요<br><br>- 경기기록의 데이터를 통해 AI가<br>맞춤형 경기 및 장비를 추천해줘요</li>
                               <li><span class="noti">*일부기능 추후 업데이트 예정</span></li>
                          </ul>
+                   
+              
+                    <div class="pop_np_btn">
+                         <span id="prev_2">
+                              <a class="prev" href="#"><img src="img_nv/nex_prev_whi.png">이전</a>
+                         </span>
+                         <span id="next_2">
+                              <a class="nex" href="#">다음<img src="img_nv/nex_prev_whi.png"></a>
+                         </span>
+                    </div><!-- pop_np_btn end -->
+                    
                     </div>
                </div>
+          </div><!-- pop_sli_wrap end -->
+          
+               <div class="close">
+                    <span id="close" class="btnClose">
+                         <a href="#">&times;</a>
+                    </span>
+               </div>
+     </section> 
+     </div>
+</div>
 
-               <div class="pop_sli_box">
+
+<!-- 내용3가지 팝업 세번째 -->
+
+<div id="popserv3" class="pop">
+     <div class="layerBox">
+     <section class="pop_sli">
+          <div class="pop_sli_wrap">
+
+               <div class="pop_sli_box_pop3">
                     <div class="pop_sli_bad"><img src="img_nv/popup-3.png"></div>
-
                     <div class="pop_sli_tit">
                          <ul>
                               <li>함께하는 재미, 클럽관리</li>
                               <li>- 내 클럽을 만들거나 다른 클럽에<br>  가입하여 행사나 대회, 이벤트를<br>즐길 수 있어요</li>
-                              <li><span class="noti">*일부기능 추후 업데이트 예정</span></li>
+                              <li><span class="noti">*일부기능 추후 업데이트 예정</span><br><br></li>
                          </ul>
+                    
+              
+                   
+              
+                    <div class="pop_np_btn">
+                         <span id="prev_3">
+                              <a class="prev" href="#"><img src="img_nv/nex_prev_whi.png">이전</a>
+                         </span>
+                         <span id="next_3">
+                              <a class="nex" href="#">다음<img src="img_nv/nex_prev_whi.png"></a>
+                         </span>
+                    </div><!-- pop_np_btn end -->
+                    
                     </div>
                </div>
-              
-               <div class="pop_sli_box">
-                    <div class="pop_sli_tit">
-                         <ul class="last_pop">
-                              <li><span class="noti">*일부기능 추후 업데이트 예정</span></li>
-                              <li>끝없이 확장될 스포츠 매니저 앱!</li>
-                              <li><span>노리버스</span>와 함께 하러갈까요?</li>
-                         </ul>
-                       
+          </div><!-- pop_sli_wrap end -->
+          
+               <div class="close">
+                    <span id="close" class="btnClose">
+                         <a href="#">&times;</a>
+                    </span>
+               </div>
+     </section> 
+     </div>
+</div>
+
+
+<!-- 내용3가지 팝업 네번째(dl팝업) -->
+
+<div id="popserv4" class="pop">
+     <div class="layerBox">
+     <section class="pop_sli">
+          <div class="pop_sli_wrap">
+
+          <div class="pop_sli_box_pop4">
+               <div class="pop_sli_tit">
+                    <ul class="last_pop">
+                         <li><span class="noti">*타 종목 추후 업데이트 예정</span></li>
+                         <li>끝없이 확장될 스포츠 매니저 앱!</li>
+                         <li><span>노리버스</span>와 함께 하러갈까요?</li>
+                    </ul>
+               
+          
+               <div class="yndl_btn">
+                    <span id="sto_dl popdl" >
                          <span id="close_ok" class="btnClose">
                               <a class="n" href="#">괜찮아요</a>
                          </span>
-                         <!-- 이하 클릭시 슬릭으로 넘어감 -->
-                    </div>
+                    <a class="ps" href="https://play.google.com/store/apps/details?id=com.esalt.noriverse"target="_blank"><img src="img_nv/store_play.png"></a>
+
+                    <a class="ap" href="https://apps.apple.com/us/app/%EB%85%B8%EB%A6%AC%EB%B2%84%EC%8A%A4/id1599064598?platform=iphone"target="_blank"><img src="img_nv/store_app.png"></a>
+                    </span>
+               </div>
+
                </div>
           </div>
-
-     </section> 
-     <!-- 이 위안까지 슬릭슬라이더 -->
+          </div><!-- pop_sli_wrap end -->
           <div class="close">
                <span id="close" class="btnClose">
                     <a href="#">&times;</a>
                </span>
           </div>
-        
+          
+     </section> 
      </div>
 </div>
-</div>
+
+
+
 
 
 
