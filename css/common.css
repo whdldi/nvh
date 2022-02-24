@@ -258,6 +258,13 @@ footer{
      .fa-times{
           display: none;
      }
+
+      /* 추가 */
+
+
+
+
+
      
 }
 
@@ -281,6 +288,7 @@ footer{
           z-index: 9;
           transition: .5s;
      }
+     
      .fas {
           display:block;
           position: absolute;
@@ -291,6 +299,25 @@ footer{
      .fa-times{
           display: none;
      }
+
+     /* 추가 */
+
+
+     .mo_wrap{
+          width: calc(90% - 10px);
+          margin-top: 10px;
+     }
+
+     .mo_logo{
+          width: 100%;
+          display: inline-block;
+          text-align: left;
+     }
+     .mo_logo img{
+          width: 60%;
+     }
+
+
 }
 
 
