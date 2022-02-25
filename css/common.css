@@ -322,15 +322,15 @@ header{
 .header_in .logo a img{
      width: 160px;
 }
-header .fixed{
+
+header.fixed {
      width: 100%;
      position: fixed;
-     top:0;
-     left:0;
+     top: 0;
+     left: 0;
      height: 70px;
-     line-height: 67px;
      z-index: 500;
-}
+ }
 /* 헤더끝 */
 
 
@@ -338,6 +338,7 @@ header .fixed{
 .mo_wrap{
      width: calc(90% - 10px);
      margin-top: 20px;
+     
 }
 
 .mo_inner{
