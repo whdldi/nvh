@@ -164,7 +164,7 @@
 
 
 
-
+/* check 지점 */
 
 /* 이하 슬릭슬라이드 dots랑 next/prev버튼 */
 .slick-dots{
@@ -1039,6 +1039,114 @@ header nav .gnb > li{
      height: 60%;
      margin-left: 9px;
 }
+
+
+/* service 부분 글자 */
+/* 제목 */
+.serv_tit ul :nth-child(2) {
+     font-size: 1.6rem;
+     font-weight: 500;
+     color: #555;
+ }
+
+.serv_tit ul :nth-child(3),
+.spo_tit ul :nth-child(2){
+     font-size: 2.8rem;
+     font-weight: 700;
+     color: #333;
+}
+
+/* 항목 제목 */
+.serv_tit ul :first-child,
+.spo_tit ul :first-child
+{
+     width: 9px;
+     height: 9px;
+ }
+.serv_t ul :first-child{
+     font-size: 2.2rem;
+ }
+.serv_t ul :nth-child(2) {
+     font-weight: 700;
+     color: #ff9100;
+     margin-bottom: 10px;
+     font-size: 1.5rem;
+}
+.serv_t ul :nth-child(3){
+     font-size: 1.6rem;
+}
+.serv_tit,
+.spo_tit{
+     margin-top: 60px;
+ }
+
+.serv {
+     padding-bottom:60px;
+ }
+
+.serv_box {
+     text-align: center;
+     margin-top: 30px;
+ }
+
+ .serv_wrap {
+     height: 420px;
+ }
+
+ .bad {
+     width: 50%;
+     height: 30%;
+ }
+
+ .serv_t {
+     margin-top: 15px;
+     width: 80%;
+     margin-right: 0%;
+     word-break:keep-all;
+ }
+
+ .slick-dotted.slick-slider {
+     margin-bottom: 0px;
+ }
+ .slick-prev,
+ .slick-next {
+     position: absolute;
+     z-index: 500;
+     top: 90.5%;
+     left: 10%;
+     -webkit-transform: none;
+     -ms-transform: none;
+     transform:none;
+     background: none;
+     width: 30px;
+     height: 50px;
+     opacity: .9;
+    
+ }
+ .slick-prev{
+     left: 18%;
+ }
+ .slick-next{
+     left: 71%;
+ }
+
+ .slick-dots li {
+     margin: 0px 2px;
+     opacity: .7;
+ }
+ .slick-next:before,
+ .slick-prev:before
+ {
+     content: url(../img_nv/mo_nex_prev.png);
+     display: block;
+ }
+
+ .btn {
+     margin-top: 15px;
+ }
+
+/* sport 종목 */
+
 
 
 
