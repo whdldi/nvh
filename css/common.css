@@ -244,25 +244,111 @@ footer{
           left:-100%;
           width: 80%;
           height: 100%;
-          background-color: #eee;
-          z-index: 9;
+          background-color: rgb(255, 255, 255);
+          z-index: 5000;
           transition: .5s;
      }
      .fas {
           display:block;
           position: absolute;
           right: 30px;
-          top:30px;
+          top:25px;
           font-size: 2.0rem;
+          z-index: 9999;
      }
      .fa-times{
           display: none;
+          color: white;
      }
 
-      /* 추가 */
+/* 추가 */
+.bk::before {
+     display: block;
+     content: "";
+     position: absolute;
+     left: 100%;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background: rgb(0, 0, 0, 0.6);
+     z-index:0;
+}
+
+/* 헤더 */
+header{
+     height: 70px;
+     line-height: 67px;
+}
+.header_in .logo a img{
+     width: 160px;
+}
+
+header.fixed {
+     width: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 70px;
+     z-index: 500;
+ }
+/* 헤더끝 */
 
 
+/* 햄버거메뉴 */
+.mo_wrap{
+     width: calc(90% - 10px);
+     margin-top: 20px;
+     
+}
 
+.mo_inner{
+     width: 100%;
+     display: inline-block;
+     text-align: left;
+}
+.mo_inner img{
+     width: 40%;
+     display: block;
+}
+
+.ham_text p{
+     font-size: 2.8rem;
+     font-weight: 400;
+     text-align: left;
+     line-height: 40px;
+     margin-top: 20px
+}
+.ham_text p span {
+     font-size: 2.8rem;
+     font-weight: 800;
+}
+
+.mo_wrap ul{
+     border-top: 1px solid #999;
+}
+.mo_wrap ul li a{
+     font-size: 2.6rem;
+     font-weight: 700;
+}
+.mo_wrap ul li:first-child{
+     margin-top: 10px;
+}
+.fa-bars{
+     position: fixed;
+     z-index: 2000;
+}
+
+.icon{
+     position: absolute;
+     bottom: 0;
+}
+
+.icon > a{
+     margin-right: 20px;
+}
+.icon > a:last-child{
+     margin-right: 0;
+}
 
 
      
@@ -341,11 +427,7 @@ header.fixed {
      
 }
 
-.mo_inner{
-     width: 100%;
-     display: inline-block;
-     text-align: left;
-}
+
 .mo_inner img{
      width: 60%;
 }
@@ -355,25 +437,7 @@ header.fixed {
      font-weight: 400;
      text-align: left;
      line-height: 40px;
-}
-.ham_text p span {
-     font-size: 2.6rem;
-     font-weight: 800;
-}
-
-.mo_wrap ul{
-     border-top: 1px solid #999;
-}
-.mo_wrap ul li a{
-     font-size: 2.3rem;
-     font-weight: 700;
-}
-.mo_wrap ul li:first-child{
-     margin-top: 10px;
-}
-.fa-bars{
-     position: fixed;
-     z-index: 2000;
+     margin-top: 20px
 }
 
 
@@ -386,7 +450,8 @@ header.fixed {
 
 
 
-}
+
+}/* media 끝 */
 
 
 
