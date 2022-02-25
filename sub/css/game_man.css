@@ -120,3 +120,33 @@
      margin-bottom: 60px;
 
 }
+
+
+/* Mo.ver */
+@media (min-width: 320px) and (max-width: 480px) {
+     .mann {
+          width: 100%;
+          height: 2430px;
+          background-color: #fafafa;
+      }
+
+      .mann_tit {
+          font-size: 1.4rem;
+          padding-top: 70px;
+      }
+      .mann_tit ul li {
+          font-size: 1.6rem;
+          line-height: 38px;
+      }
+      .mann_tit ul :nth-child(2) {
+          padding-top: 8px;
+          font-size: 3.2rem;
+      }
+      .mann_tit ul :nth-child(2)::after {
+          width: 130px;
+      }
+      .mann_t ul li {
+          font-size: 2.2rem;
+      }
+
+}
