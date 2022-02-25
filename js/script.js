@@ -5,6 +5,8 @@ $(document).ready(function(){
     $(function () {
           //햄버거 아이콘 클릭하면 .mobile이 좌측에서 우측으로(left:0)
           $('.fa-bars').click(function () {
+            $('.mobile').addClass('bk'); 
+            //배경필터추가
             $('.mobile').css({
               'left': '0'
             });
@@ -16,11 +18,14 @@ $(document).ready(function(){
           });
 
           $('.fa-times').click(function () {
+            $('.bk').removeClass('bk'); 
+            $('.bk').fadeOut(200); 
             $('.mobile').css({
               'left': '-100%'
             });
             $('.fa-bars').show();
             $('.fa-times').hide();
+            $('.bk').hide();
           });
 
 });  
