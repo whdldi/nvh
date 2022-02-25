@@ -350,9 +350,12 @@ header.fixed {
      margin-right: 0;
 }
 
-
      
 }
+/* tb end */
+
+
+
 
 /* Mo.ver */
 @media (min-width: 320px) and (max-width: 480px){
@@ -439,14 +442,6 @@ header.fixed {
      line-height: 40px;
      margin-top: 20px
 }
-
-
-
-
-
-
-
-
 
 
 
