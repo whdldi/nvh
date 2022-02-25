@@ -319,9 +319,11 @@
      line-height: 38px;
      border-radius: 10px;
      background-color: #ccc;
-     margin-right: 20px;
      color: white;
      cursor: pointer;
+}
+.bill_btn{
+     margin-left: 20px;
 }
 .btn i{
      font-size: 2rem;
@@ -352,7 +354,7 @@
      margin: 0 auto;
      text-align: left;
      height: 400px;
-     
+     overflow: hidden;
 }
 .spo_bg{
      position: absolute;
@@ -365,14 +367,17 @@
      display: block;
 }
 .spo_box1 .spo_bg img.first_box{
-     width: 106%;
+     width: 101%;
 }
 .spo_t{
      padding-top: 130px;
-     padding-left: 60px;
+     padding-left: 50px;
      display: inline-block;
      width: 50%;
      height: 100%;
+}
+.gray_bg > .spo_box1 > .spo_t ul{
+     padding-right: 50px;
 }
 .spo_t ul :first-child{
     font-size: 2.5rem;
