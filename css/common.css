@@ -30,7 +30,7 @@ header.fixed {
      top: 0;
      left: 0;
      height: 80px;
-     z-index: 50000;
+     z-index: 5000;
 }
 
 .header_in {
@@ -78,11 +78,11 @@ header.fixed {
 
 .icon a {
      display: inline-block;
-     vertical-align: middle;
+     vertical-align: bottom;
      width: 30px;
      text-align: center;
      margin-right: 10px;
-     height: 50px;
+     height: 54px;
      line-height: 50px;
 }
 
@@ -232,7 +232,7 @@ footer {
      right: 0;
      display: inline-block;
      text-align: center;
-     z-index: 5000;
+     z-index: 3000;
 }
 
 .up a {

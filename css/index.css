@@ -1391,6 +1391,17 @@ header nav .gnb>li {
           height: 100%;
           position: relative;
       }
+      #popserv4 .pop_sli {
+          width:100%;
+          background: url(../img_nv/popup-4.png) 60px -100px / cover no-repeat;
+          background-color: white;
+          height: 330px;
+          position: relative;
+      }
+      #popserv4 .pop_sli_wrap>div {
+          display: inline-block;
+          margin-top: 0px;
+      }
       .pop_sli_tit ul li:first-child {
           margin-bottom: 15px;
       }
@@ -1419,20 +1430,6 @@ header nav .gnb>li {
       /* 다음버튼 */
 
 
-      .pop_np_btn {
-          position: absolute;
-          top: 83%;
-          right: 26%;
-          transform: translate(-50%, -50%);
-      }
-    
-       /* 내용3가지 팝업 두번째 */
-      #popserv2 .pop_np_btn, #popserv3 .pop_np_btn {
-          position: absolute;
-          top: 83%;
-          right: -5%;
-          transform: translate(-50%, -50%);
-      }
 
      .pop_sli_box_pop2 .pop_sli_bad  {
           padding-left: 15px;
@@ -1443,10 +1440,22 @@ header nav .gnb>li {
       }
 
 
+     /* 1개있을때 다음,이전 */
+     #popserv .pop_np_btn {
+          position: absolute;
+          top: 83%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+     }
 
-
-
-
+     /* 2개있을때 다음,이전 */
+     #popserv2 .pop_np_btn,
+     #popserv3 .pop_np_btn {
+          position: absolute;
+          top: 83%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+     }
       #close a {
           font-size: 3rem;
           display: inline-block;
@@ -1457,5 +1466,63 @@ header nav .gnb>li {
           text-align: center;
           cursor: pointer;
       }
+
+      .pop_np_btn .prev {
+          margin-right: 10px;
+      }
+
+      .pop_np_btn{
+           width: 100%;
+      }
+      .pop_sli_wrap>div {
+          display: inline-block;
+          margin-top: 20px;
+      }
+      #popserv3 .pop_sli_bad img {
+          margin-top: 0px;
+          padding-left: 25px;
+      }
+
+
+      #popserv4 .pop_sli_tit ul li:nth-child(2) {
+          font-size: 1.7rem;
+          font-weight: 500;
+          color: #444;
+      }
+
+      .pop_sli_tit .last_pop>li:last-child {
+          color: #333;
+          font-size: 2.2rem;
+          font-weight: 600;
+      }
+      .pop_sli_tit .last_pop>li:last-child span {
+          color: #ff9100;
+          font-size: 2.2rem;
+      }
+      .yndl_btn a {
+          width: 90px;
+          height: 38px;
+          line-height: 36px;
+          font-size: 1.7rem;
+      }
+      .yndl_btn .ps,
+      .yndl_btn .ap {
+          display: inline-block;
+          width: 40px;
+          height: 39px;
+          line-height: 33px;
+          border-radius: 10px;
+          background-color: #ff9100;
+      }
+      .yndl_btn a img {
+          width: 20px;
+          height: 24px;
+      }
+     .n{
+          background-color: #333;
+          margin-left: 10px;
+     }
+
+
 
 }
