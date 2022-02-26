@@ -9,6 +9,10 @@
      display: none;
 }
 
+.mo_oran{
+     display: none;
+}
+
 .main_visual {
      height: 650px;
      background: url('../img_nv/pc_main.png') center center / cover no-repeat;
@@ -1050,6 +1054,9 @@ header nav .gnb>li {
 /* Mo.ver */
 @media (min-width: 320px) and (max-width: 480px) {
 
+     .nex{
+          display: block;
+     }
      .main_visual {
           height: 630px;
           background: url(../img_nv/mo_main.png) -691px 0px / cover no-repeat;
@@ -1340,5 +1347,115 @@ header nav .gnb>li {
      }
 
 
+     /* popup */
+     /* 인트로 팝업 */
+     .layerBox {
+          top: 45%;
+      }
+
+     .cont_intro {
+          text-align: center;
+          margin: 0 auto;
+          font-weight: 800;
+          padding: 20px 0;
+      }
+      .intro li:last-child {
+          margin: 8px 0;
+          width: 55%;
+          margin: 0 auto;
+      }
+      .intro li, .intro li span {
+          font-size: 1.9rem;
+          line-height: 28px;
+      }
+     
+      .yn_btn a {
+          width: 90px;
+          height: 38px;
+          line-height: 36px;
+          margin-top: 15px;
+          font-size: 1.7rem;
+      }
+      .intro li img {
+          width: 55%;
+      }
+
+
+      /* 내용3가지 팝업 첫번째 */
+      .pop_sli {
+          max-width: 800px;
+          width:100%;
+          background-color: white;
+          box-shadow: 0px 0px 20px rgb(0 0 0 / 30%);
+          border-radius: 10px;
+          height: 100%;
+          position: relative;
+      }
+      .pop_sli_tit ul li:first-child {
+          margin-bottom: 15px;
+      }
+      .pop_sli_tit {
+          text-align: center;
+      }
+
+      .pop_sli_bad {
+          margin-right: 0px;
+          display: inline-block;
+          width: 100%;
+      }
+     .pop img {
+          width: 80%;
+      }
+
+      .pop_sli_wrap>div div {
+          display: inline-block;
+          margin-top: 32px;
+      }
+
+
+      .pop_sli_wrap {
+          margin-bottom: 80px;
+      }
+      /* 다음버튼 */
+
+
+      .pop_np_btn {
+          position: absolute;
+          top: 83%;
+          right: 26%;
+          transform: translate(-50%, -50%);
+      }
+    
+       /* 내용3가지 팝업 두번째 */
+      #popserv2 .pop_np_btn, #popserv3 .pop_np_btn {
+          position: absolute;
+          top: 83%;
+          right: -5%;
+          transform: translate(-50%, -50%);
+      }
+
+     .pop_sli_box_pop2 .pop_sli_bad  {
+          padding-left: 15px;
+      }
+
+      #popserv2 .pop_sli_bad {
+          margin-right: 0px;
+      }
+
+
+
+
+
+
+      #close a {
+          font-size: 3rem;
+          display: inline-block;
+          position: absolute;
+          right: 0;
+          line-height: 50px;
+          width: 40px;
+          text-align: center;
+          cursor: pointer;
+      }
 
 }
