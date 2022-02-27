@@ -3,7 +3,14 @@
 
 /* mobile에서만 보일것 */
 
-
+header.fixed {
+     width: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 80px;
+     z-index: 5000;
+}
 
 
 .title {
