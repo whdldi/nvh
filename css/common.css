@@ -89,7 +89,9 @@ header.fixed {
      width: 100%;
      display: block;
 }
-
+.header_in div .icon {
+     display: none;
+ }
 /* download btn */
 .dl a {
      display: inline-block;
