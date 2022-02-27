@@ -1432,7 +1432,7 @@ header nav .gnb>li {
 
 
      .pop_sli_box_pop2 .pop_sli_bad  {
-          padding-left: 15px;
+          padding-left: 18px;
       }
 
       #popserv2 .pop_sli_bad {
@@ -1456,6 +1456,10 @@ header nav .gnb>li {
           left: 50%;
           transform: translate(-50%, -50%);
      }
+
+   
+      /* 엥 왜 안먹냐 */
+
       #close a {
           font-size: 3rem;
           display: inline-block;
@@ -1480,7 +1484,7 @@ header nav .gnb>li {
       }
       #popserv3 .pop_sli_bad img {
           margin-top: 0px;
-          padding-left: 25px;
+          padding-left: 34px;
       }
 
 
