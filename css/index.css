@@ -9,7 +9,7 @@
      display: none;
 }
 
-.mo_oran{
+.mo_oran {
      display: none;
 }
 
@@ -92,7 +92,6 @@
 .serv_tit {
      text-align: center;
      margin-top: 80px;
-     /* margin-bottom: 20px; */
 }
 
 .serv_tit ul :first-child {
@@ -120,7 +119,6 @@
 .serv_wrap {
      max-width: 680px;
      width: calc(100% - 50px);
-     /* border: 2px solid violet; */
      height: 300px;
      text-align: left;
      display: flex;
@@ -133,11 +131,9 @@
      margin: 0 auto;
      width: 600px;
      height: 100%;
-     /* background-color: aqua; */
 }
 
 .serv_box {
-     /* background-color: antiquewhite; */
      display: inline-block;
      margin-top: 40px;
      width: 100%;
@@ -151,7 +147,6 @@
 .bad {
      width: 30%;
      height: 30%;
-     /* background-color: #333; */
      display: inline-block;
      margin-right: 5%;
      margin-left: 5.8%;
@@ -166,7 +161,6 @@
      display: inline-block;
      width: 50%;
      vertical-align: middle;
-     /* background-color: yellow; */
      height: 100%;
      margin-right: 5%;
 }
@@ -185,7 +179,6 @@
 
 
 
-/* check 지점 */
 
 /* 이하 슬릭슬라이드 dots랑 next/prev버튼 */
 .slick-dots {
@@ -248,8 +241,6 @@
      background: transparent;
 }
 
-/* 있어야 left,right btn보임 */
-
 .slick-prev:before,
 .slick-next:before {
      font-family: 'slick';
@@ -303,7 +294,6 @@
 .sport {
      width: 100%;
      height: 1935px;
-     /* padding-bottom: 37px; */
      text-align: center;
 }
 
@@ -329,7 +319,6 @@
 
 
 /* sport 공통틀 */
-
 /* spo_btn(종목선택버튼) */
 .btn {
      width: 100%;
@@ -433,7 +422,7 @@
      color: #ff9100;
 }
 
-/* 2nd&4nd background color:gray /text-align:right */
+/* 2nd&4nd */
 .gray_bg>.spo_box1 {
      text-align: right;
      max-width: 634px;
@@ -461,12 +450,6 @@ img.grays {
 
 
 
-
-
-
-/* 24시간 팝업 */
-/* 24시간 팝업 */
-/* 24시간 팝업 */
 /* 24시간 팝업 */
 .pop {
      display: none;
@@ -757,7 +740,7 @@ header nav .gnb>li {
      transform: rotateY(180deg);
 }
 
-/* 첫페이지의 이전은 없앰 */
+/* 첫페이지의 이전버튼 제거*/
 #prev_1 {
      display: none;
 }
@@ -781,9 +764,6 @@ header nav .gnb>li {
 }
 
 
-
-
-/* 마지막 다운로드부분 팝업속성 */
 .pop_sli_tit .last_pop {
      text-align: center;
 }
@@ -1054,9 +1034,10 @@ header nav .gnb>li {
 /* Mo.ver */
 @media (min-width: 320px) and (max-width: 480px) {
 
-     .nex{
+     .nex {
           display: block;
      }
+
      .main_visual {
           height: 630px;
           background: url(../img_nv/mo_main.png) -691px 0px / cover no-repeat;
@@ -1085,8 +1066,6 @@ header nav .gnb>li {
      .subt b {
           font-weight: 800;
      }
-
-     /* 중간선 */
      .subt span {
           width: 60px;
           height: 2px;
@@ -1144,16 +1123,14 @@ header nav .gnb>li {
 
      /* service 부분 글자 */
      /* 제목 */
-     .serv_tit ul :nth-child(2)
-     {
+     .serv_tit ul :nth-child(2) {
           font-size: 1.6rem;
           font-weight: 500;
           color: #555;
      }
 
      .serv_tit ul :nth-child(3),
-     .spo_tit ul :nth-child(2)
-     {
+     .spo_tit ul :nth-child(2) {
           font-size: 2.8rem;
           font-weight: 700;
           color: #333;
@@ -1296,7 +1273,7 @@ header nav .gnb>li {
           background-color: #fff;
      }
 
-     /* 첫번째 세번째에만 색 */
+
      .spo_box1>#bg1_3 {
           width: 100%;
           margin: 0 auto;
@@ -1329,115 +1306,121 @@ header nav .gnb>li {
      }
 
      #bg1_3_clo_txt ul li span {
-          color: black;
+          color: #fff;
      }
 
      .gray_bg {
           margin-bottom: 0px;
           padding-top: 0px;
-          /* margin-bottom: 53px;
-     padding-top: 45px; */
           width: 100%;
           height: 100%;
           background-color: #fff;
      }
 
      .sport {
-          height: 2740px;
+          height: 2600px;
      }
 
 
-     /* popup */
      /* 인트로 팝업 */
      .layerBox {
           top: 45%;
-      }
+     }
 
      .cont_intro {
           text-align: center;
           margin: 0 auto;
           font-weight: 800;
           padding: 20px 0;
-      }
-      .intro li:last-child {
+     }
+
+     .intro li:last-child {
           margin: 8px 0;
           width: 55%;
           margin: 0 auto;
-      }
-      .intro li, .intro li span {
+     }
+
+     .intro li,
+     .intro li span {
           font-size: 1.9rem;
           line-height: 28px;
-      }
-     
-      .yn_btn a {
+     }
+
+     .yn_btn a {
           width: 90px;
           height: 38px;
           line-height: 36px;
           margin-top: 15px;
           font-size: 1.7rem;
-      }
-      .intro li img {
+     }
+
+     .intro li img {
           width: 55%;
-      }
+     }
 
 
-      /* 내용3가지 팝업 첫번째 */
-      .pop_sli {
+     /* 내용3가지 팝업 첫번째 */
+     .pop_sli {
           max-width: 800px;
-          width:100%;
+          width: 100%;
           background-color: white;
           box-shadow: 0px 0px 20px rgb(0 0 0 / 30%);
           border-radius: 10px;
           height: 100%;
           position: relative;
-      }
-      #popserv4 .pop_sli {
-          width:100%;
+     }
+
+     #popserv4 .pop_sli {
+          width: 100%;
           background: url(../img_nv/popup-4.png) 60px -100px / cover no-repeat;
           background-color: white;
           height: 330px;
           position: relative;
-      }
-      #popserv4 .pop_sli_wrap>div {
+     }
+
+     #popserv4 .pop_sli_wrap>div {
           display: inline-block;
           margin-top: 0px;
-      }
-      .pop_sli_tit ul li:first-child {
-          margin-bottom: 15px;
-      }
-      .pop_sli_tit {
-          text-align: center;
-      }
+     }
 
-      .pop_sli_bad {
+     .pop_sli_tit ul li:first-child {
+          margin-bottom: 15px;
+     }
+
+     .pop_sli_tit {
+          text-align: center;
+     }
+
+     .pop_sli_bad {
           margin-right: 0px;
           display: inline-block;
           width: 100%;
-      }
+     }
+
      .pop img {
           width: 80%;
-      }
+     }
 
-      .pop_sli_wrap>div div {
+     .pop_sli_wrap>div div {
           display: inline-block;
           margin-top: 32px;
-      }
+     }
 
 
-      .pop_sli_wrap {
+     .pop_sli_wrap {
           margin-bottom: 80px;
-      }
-      /* 다음버튼 */
+     }
 
 
 
-     .pop_sli_box_pop2 .pop_sli_bad  {
+
+     .pop_sli_box_pop2 .pop_sli_bad {
           padding-left: 18px;
-      }
+     }
 
-      #popserv2 .pop_sli_bad {
+     #popserv2 .pop_sli_bad {
           margin-right: 0px;
-      }
+     }
 
 
      /* 1개있을때 다음,이전 */
@@ -1457,10 +1440,8 @@ header nav .gnb>li {
           transform: translate(-50%, -50%);
      }
 
-   
-      /* 엥 왜 안먹냐 */
 
-      #close a {
+     #close a {
           font-size: 3rem;
           display: inline-block;
           position: absolute;
@@ -1469,63 +1450,71 @@ header nav .gnb>li {
           width: 40px;
           text-align: center;
           cursor: pointer;
-      }
+     }
 
-      .pop_np_btn .prev {
+     .pop_np_btn .prev {
           margin-right: 10px;
-      }
+     }
 
-      .pop_np_btn{
-           width: 100%;
-      }
-      .pop_sli_wrap>div {
+     .pop_np_btn {
+          width: 100%;
+     }
+
+     .pop_sli_wrap>div {
           display: inline-block;
           margin-top: 20px;
-      }
-      #popserv3 .pop_sli_bad img {
+     }
+
+     #popserv3 .pop_sli_bad img {
           margin-top: 0px;
           padding-left: 34px;
-      }
+     }
 
 
-      #popserv4 .pop_sli_tit ul li:nth-child(2) {
+     #popserv4 .pop_sli_tit ul li:nth-child(2) {
           font-size: 1.7rem;
           font-weight: 500;
           color: #444;
-      }
+     }
 
-      .pop_sli_tit .last_pop>li:last-child {
+     .pop_sli_tit .last_pop>li:last-child {
           color: #333;
           font-size: 2.2rem;
           font-weight: 600;
-      }
-      .pop_sli_tit .last_pop>li:last-child span {
+     }
+
+     .pop_sli_tit .last_pop>li:last-child span {
           color: #ff9100;
           font-size: 2.2rem;
-      }
-      .yndl_btn a {
+     }
+
+     .yndl_btn a {
           width: 90px;
           height: 38px;
           line-height: 36px;
           font-size: 1.7rem;
-      }
-      .yndl_btn .ps,
-      .yndl_btn .ap {
+     }
+
+     .yndl_btn .ps,
+     .yndl_btn .ap {
           display: inline-block;
           width: 40px;
           height: 39px;
           line-height: 33px;
           border-radius: 10px;
           background-color: #ff9100;
-      }
-      .yndl_btn a img {
+     }
+
+     .yndl_btn a img {
           width: 20px;
           height: 24px;
-      }
-     .n{
+     }
+
+     .n {
           background-color: #333;
           margin-left: 10px;
      }
+
 
 
 

@@ -3,7 +3,7 @@
 * {
      font-size: 1.7rem;
 }
-/* 기본폰트 사이즈 */
+
 
 .fas,
 .mobile {
@@ -22,7 +22,7 @@ header {
      background-color: white;
 }
 
-/* 스크립트로 스크롤 고정 */
+/* 스크롤 고정 */
 header.fixed {
      width: 100%;
      position: fixed;
@@ -52,7 +52,6 @@ header.fixed {
      vertical-align: middle;
 }
 
-/* pc_wrap이 mo ver에서 none=logo 제외 */
 .pc_none {
      display: inline-block;
 }
@@ -70,7 +69,7 @@ header.fixed {
 }
 
 
-/* icon 3개 */
+/* icon 3개(지금은지움)*/
 .icon {
      margin-right: 20px;
 }
@@ -89,9 +88,11 @@ header.fixed {
      width: 100%;
      display: block;
 }
+
 .header_in div .icon {
      display: none;
- }
+}
+
 /* download btn */
 .dl a {
      display: inline-block;
@@ -111,8 +112,6 @@ header.fixed {
 }
 
 /* header end */
-/* header end */
-/* header end */
 
 
 
@@ -121,8 +120,9 @@ header.fixed {
 .dl_footer {
      display: inline-block;
      width: 100%;
-     height: 300px;
+     height: 250px;
      background: url('../img_nv/pcmo_dl_banner.png') center center / cover no-repeat;
+     margin-top: 100px;
 }
 
 .dl_footer img {
@@ -136,7 +136,7 @@ header.fixed {
      height: 100%;
      margin: 0 auto;
      text-align: center;
-     padding-top: 75px;
+     padding-top: 55px;
 
 }
 
@@ -331,9 +331,6 @@ footer {
           z-index: 500;
      }
 
-     /* 헤더끝 */
-
-
      /* 햄버거메뉴 */
      .mo_wrap {
           width: calc(90% - 10px);
@@ -475,9 +472,6 @@ footer {
           z-index: 5000;
      }
 
-     /* 헤더끝 */
-
-
      /* 햄버거메뉴 */
      .mo_wrap {
           width: calc(90% - 10px);
@@ -518,21 +512,23 @@ footer {
           margin-top: 15px;
           font-size: 1.3rem;
      }
+
      .dl_wrap dl dt {
           font-size: 1.6rem;
           font-weight: 500;
           color: #555;
-      }
+     }
+
      .dl_wrap dl dd {
           font-size: 2.8rem;
           font-weight: 700;
           color: #333;
-      }
+     }
 
 
-      /* 모바일 uo */
+     /* 모바일 uo */
 
-      .up a {
+     .up a {
           box-shadow: 0px 0px 3px rgb(0 0 0);
           position: absolute;
           z-index: 5000;
@@ -542,8 +538,7 @@ footer {
           height: 35px;
           background-color: rgba(82, 81, 81, 0.589);
           border-radius: 50%;
-      }
+     }
 
 }
 
-/* media 끝 */
