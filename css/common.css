@@ -540,5 +540,9 @@ footer {
           border-radius: 50%;
      }
 
+     .info_footer a:nth-child(2){
+          margin-right: 0;
+     }
+
 }
 

@@ -455,6 +455,10 @@ img.grays {
      display: none;
 }
 
+.intro br{
+     display: none;
+}
+
 /* 검은필터 */
 .pop:before {
      display: block;
@@ -1033,7 +1037,9 @@ header nav .gnb>li {
 
 /* Mo.ver */
 @media (min-width: 320px) and (max-width: 480px) {
-
+     .intro br{
+          display: block;
+     }
      .nex {
           display: block;
      }
