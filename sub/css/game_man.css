@@ -152,6 +152,8 @@
      .mann_wrap :last-child {
           margin-top: 30px;
       }
-
+      .dl_footer {
+          margin-top: 0px;
+      }
 
 }

@@ -1,8 +1,4 @@
 @charset "utf-8";
-/* 여기서 개인정보에만 보일거 추림 */
-
-/* mobile에서만 보일것 */
-
 header.fixed {
      width: 100%;
      position: fixed;
@@ -24,7 +20,7 @@ header.fixed {
      margin: 0 auto;
      position: relative;
      white-space: pre-line;
-     
+
 }
 
 
@@ -44,12 +40,3 @@ header.fixed {
      letter-spacing: -0.15rem;
      line-height: 50px;
 }
-
-
-
-
-
-
-
-
-
