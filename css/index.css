@@ -1029,12 +1029,6 @@ header nav .gnb>li {
 
 
 
-
-
-
-
-
-
 /* Mo.ver */
 @media (min-width: 320px) and (max-width: 480px) {
      .intro br{
@@ -1326,6 +1320,7 @@ header nav .gnb>li {
      .sport {
           /* height: 2746px; */
           height: 2846px;
+          height: 100%;
      }
 
 
