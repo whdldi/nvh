@@ -2,18 +2,14 @@ $(document).ready(function () {
 
 
   $(function () {
-    //햄버거 아이콘 클릭하면 .mobile이 좌측에서 우측으로(left:0)
+    //햄버거 아이콘 클릭시 .mobile이 좌->우측 메뉴
     $('.fa-bars').click(function () {
       $('.mobile').addClass('bk');
-      //배경필터추가
       $('.mobile').css({
         'left': '0'
       });
       $('.fa-bars').hide();
       $('.fa-times').show();
-      //$('.mobile').css('left','0');
-      // 햄버거 아이콘숨김 hide()
-      //닫기 아이콘 보임 show()
     });
 
     $('.fa-times').click(function () {
@@ -29,7 +25,7 @@ $(document).ready(function () {
 
   });
 
-  /* 헤더고정 스크롤 했을때 */
+  //헤더고정 스크롤
   $(function () {
     var headerTop = $('header').offset().top;
     $(window).scroll(function () {
@@ -45,7 +41,7 @@ $(document).ready(function () {
 
 });
 
-/* 메인이미지 슬라이드 */
+//메인이미지 슬라이드
 $(function () {
   $('.serv_wrap').slick({
     dots: true,
@@ -82,7 +78,7 @@ $(function () {
 });
 
 
-// /* 24시간 팝업 */
+//24시간 팝업 
 $(function () {
   // 쿠키 가져오기
   var getCookie = function (cname) {
@@ -106,7 +102,7 @@ $(function () {
 
   var couponClose = function () {
     if ($("input[name='chkbox']").is(":checked") == true) {
-      setCookie("close", "Y", 1); //기간( ex. 1은 하루, 7은 일주일)
+      setCookie("close", "Y", 1);
     }
     $("#pop").fadeOut(0);
   }
@@ -123,7 +119,6 @@ $(function () {
       couponClose();
       $("#sli").hide();
       $(".pop").fadeOut(200);
-      //모든 팝업에서 X눌렀을때 닫기
     });
     $("#close_ok").click(function () {
       couponClose();
@@ -131,11 +126,10 @@ $(function () {
     $("#close_letsee").click(function () {
       couponClose();
       $("#popserv").show();
-      //볼래요 눌렀을때 서비스팝업3가지중 첫번째팝업
     });
 
 
-    //이하 다음버튼/이전버튼 이동
+    //다음버튼/이전버튼 이동
     $("#next_1").click(function () {
       couponClose();
       $("#popserv").hide();
