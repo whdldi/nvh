@@ -1,0 +1,46 @@
+@charset "utf-8";
+header.fixed {
+     width: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 80px;
+     z-index: 5000;
+}
+
+
+.title {
+     max-width: 1200px;
+     width: calc(100% - 50px);
+     height: 100%;
+     display: inline-block;
+     text-align: left;
+     display: flex;
+     justify-content: space-between;
+     margin: 0 auto;
+     position: relative;
+     white-space: pre-line;
+
+}
+
+
+
+.subt p {
+     font-size: 1.6rem;
+     color: #444;
+     line-height: 30px;
+     font-weight: 500;
+     letter-spacing: -0.15rem;
+}
+
+.big_title {
+     font-size: 2.2rem;
+     color: #444;
+     font-weight: 700;
+     letter-spacing: -0.15rem;
+     line-height: 50px;
+}
+
+footer{
+     margin-top: 100px;
+}

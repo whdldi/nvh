@@ -122,6 +122,13 @@
 }
 
 
+
+.mo_inner .mo_info_menu a{
+     font-weight: 400;
+}
+.mo_inner .mo_manner_menu a{
+     font-weight: 700;
+}
 /* Mo.ver */
 @media (min-width: 320px) and (max-width: 480px) {
      .mann {
@@ -155,5 +162,6 @@
       .dl_footer {
           margin-top: 0px;
       }
+
 
 }
