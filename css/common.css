@@ -9,7 +9,6 @@
 .mobile {
      display: none;
 }
-
 /* mo menu */
 
 header {
@@ -367,11 +366,12 @@ footer {
 
      .mo_wrap ul li a {
           font-size: 2.6rem;
-          font-weight: 700;
+          font-weight: 400;
      }
 
-     .mo_wrap ul li:first-child {
+     .mo_inner .mo_info_menu a{
           margin-top: 10px;
+          font-weight: 700;
      }
 
      .fa-bars {
@@ -392,6 +392,7 @@ footer {
           margin-right: 0;
      }
 
+     
 
 }
 
