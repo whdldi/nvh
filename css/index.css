@@ -475,7 +475,7 @@ img.grays {
 
 /* 팝업사진만 쉐도우 */
 .layerBox {
-     z-index: 5000;
+     z-index: 50000;
      max-width: 680px;
      width: calc(100% - 50px);
      position: fixed;
